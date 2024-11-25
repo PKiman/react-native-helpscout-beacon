@@ -50,8 +50,8 @@ android {
         abortOnError false
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
@@ -73,7 +73,19 @@ repositories {
 dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'  // From node_modules
-    implementation "com.helpscout:beacon:5.1.2"
+    implementation "com.helpscout:beacon:5.2.0"
+
+    api(group: "io.insert-koin", name: "koin-core") {
+        version {
+            strictly "3.4.2"
+        }
+    }
+
+    api(group: "io.insert-koin", name: "koin-android") {
+        version {
+            strictly "3.4.2"
+        }
+    }
 }
 
 def configureReactNativePom(def pom) {
