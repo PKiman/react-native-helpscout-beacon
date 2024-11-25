@@ -4,7 +4,7 @@
   "version": "0.6.0",
   "description": "Integrate Helpscout Beacon in to your React Native app",
   "main": "index.ts",
-  "types": "lib/types.d.ts",
+  "types": "types.d.ts",
   "files": [
     "react-native-helpscout-beacon.podspec",
     "android/build.gradle",
